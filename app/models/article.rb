@@ -1,7 +1,8 @@
 class Article < ActiveRecord::Base
-	belongs_tp :user
+	belongs_to :user
+	has_many :article_categories
 	has_many :categories, through: :article_categories
-	validates :tile presence: true
+	validates :title, presence: true
 	validates :content, presence: true
 	validates :categories, presence: true
 end
