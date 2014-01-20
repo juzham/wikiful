@@ -3,6 +3,8 @@
 
 <% @categories.each do |category| %>
 	<div>
-		<%= @category.name %> &nbsp; <%=category.articles.count %>
+		<%= link_to category.name, category %> &nbsp; (<%= category.articles.count %>)
 	</div>
 <% end %>	
+
+<h3> <%=link_to "Add a new category", new_category_path %>
