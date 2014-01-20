@@ -34,6 +34,12 @@ end
 
 gem 'faker'
 
+gem 'twitter-bootstrap-rails'
+
+gem 'less-rails'
+
+gem 'therubyracer'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
