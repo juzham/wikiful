@@ -1,0 +1,8 @@
+
+<h1> A great list of all categories </h1>
+
+<% @categories.each do |category| %>
+	<div>
+		<%= @category.name %> &nbsp; <%=category.articles.count %>
+	</div>
+<% end %>	
